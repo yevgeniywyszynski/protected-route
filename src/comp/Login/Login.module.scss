@@ -1,0 +1,112 @@
+/*RESET STYLE*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 1;
+  background-color: #f7f7f7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*LOGIN*/
+.login {
+  display: flex;
+  justify-content: center;
+  padding: 40px 90px;
+  background-color: #fff;
+  min-height: 100vh;
+  .loginContainer {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    .left {
+      .phoneScreen {
+        width: 100%;
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .lInputContainer {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #dbdbdb;
+        padding: 40px 40px 20px 40px;
+        gap: 10px;
+        .logoWrapper {
+          .logo {
+            width: 100%;
+          }
+        }
+        .loginInput {
+          padding: 10px 15px;
+          border: none;
+          background-color: rgb(232, 232, 232);
+          outline: none;
+        }
+        .loginBtn {
+          padding: 8px 20px;
+          border-radius: 5px;
+          background-color: #67b5fa;
+          border: none;
+          width: 100%;
+          color: #fff;
+          font-weight: 700;
+        }
+        .faceBookWrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          .facebookIcon {
+            color: #506694;
+          }
+          .titleFacebook {
+            font-size: 12px;
+          }
+        }
+        .subtitleFacebook {
+          margin-top: 10px;
+          text-align: center;
+          font-size: 12px;
+        }
+      }
+    }
+    .lRegisterWrapper {
+      border: 1px solid #dbdbdb;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      .register {
+        font-size: 12px;
+        b {
+          color: #506694;
+        }
+      }
+    }
+
+    p {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .storeWrapper {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      .storeIcon {
+        width: 50%;
+      }
+    }
+  }
+}
